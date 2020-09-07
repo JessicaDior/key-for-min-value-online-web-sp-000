@@ -2,7 +2,13 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  value = name_hash.sort{|a,b| a[1 <=> b[1]]}.first
-  puts value
+min_value = 0
+key_for_min_value = nil
 
+name_hash.each do |key, value|
+  if value > min_value
+    min_value = value
+    key_for_min_value = key
+    puts key
+  end
 end
