@@ -6,5 +6,5 @@ def key_for_min_value(name_hash)
     a <=> b
     return a
     end
-  
+
 end
